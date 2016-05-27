@@ -1,0 +1,75 @@
+
+#Wrapper3 {
+	position: relative;
+}
+
+.Mid_Footer_Section {
+	position: relative;
+	background: url(../img/billie.png);
+	width: 1240px;
+	text-align: center;
+}
+
+.Mid_Footer_Section div {
+	display:  inline-table;
+	text-align: left;
+	margin: 20px 56px 48px 56px;
+}
+
+.Mid_Footer_Section li {
+	margin-bottom: 7px;
+}
+
+.Mid_Footer_Section span {
+	margin-left: 5px;
+}
+
+.Mid_Footer_Section h1 {
+	font-size: 20px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+
+.Lower_Footer_Section {
+	position: fixed;
+	bottom: 0;
+	width: 1240px;
+	height: 35px;
+	background: url(../img/otis.png);
+	margin-top: 0px;
+}
+
+.Lower_Footer_Section p {
+	position: relative;
+	color: white;
+	float: left;
+	margin-left: 40px;
+	margin-top: 10px;
+	font-size: 15px;
+}
+.Lower_Footer_Section span {
+	margin-left: 5px;
+}
+
+.Lower_Footer_Nav-Bar {
+	width: 1240px;
+	position: absolute;
+	margin-top: 9px;
+}
+
+.Lower_Footer_Nav-Bar ul {
+	display: inline-table;
+	margin-left: 935px;
+}
+
+.Lower_Footer_Nav-Bar li {
+	float: left;
+	margin-right: 15px;
+}
+
+.Lower_Footer_Nav-Bar a {
+	color: white;
+	font-size: 15px;
+}

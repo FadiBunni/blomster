@@ -1,0 +1,30 @@
+.Galleri_Contents {
+	height: auto;
+	max-width: 1160px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	overflow-x: visible;
+}
+
+.Galleri_Contents ul li {
+	display: inline-table;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 0px;
+	overflow-x: visible;
+}
+
+.Text_Bar {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+#preview {
+	position: absolute;
+}
+
+#preview img {
+	width: auto;
+	height: 550px;
+}

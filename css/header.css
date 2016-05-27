@@ -1,0 +1,99 @@
+
+.Top_Nav_Bar {
+	position: relative;
+	background-color: #81b748;
+	background: url(../img/otis.png);
+	height: 35px;
+	width: 1240px;
+	top: 0;
+}
+
+.Middle_Nav_Bar {
+	position: absolute;
+	width: 1240px;
+	margin-top: 20px;
+}
+
+#Logo {
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 40px;
+	float: left;
+}
+
+.Nav_list {
+	float: right;
+	margin-top: 60px;
+	margin-right: 26px;
+	display: inline-block;
+}
+
+.Nav_list li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.Nav_list a {
+	font-family: arial;
+	font-size: 16px;
+	color: #8b8b8b;
+}
+
+.Nav_list a:hover {
+	font-family: arial;
+	font-size: 16px;
+	color: #DDA0DD;
+}
+
+#Nav_Bar {
+	position: relative;
+	width: 1160px;
+	margin: 0 auto;
+	height: 44px;
+	margin-top: 166px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+}
+
+#Nav_Bar nav{
+	text-align: center;
+	padding-top: 9px;
+}
+
+#Nav_Bar li {
+	display: inline;
+	padding-top: 0px;
+	padding-bottom: 8px;
+	border-right: 1px solid #8b8b8b;
+}
+
+#Forside {
+	border-left: 1px solid #8b8b8b;
+}
+
+#Nav_Bar a {
+	font-size: 25px;
+	color: black;
+	padding: 40px;
+	padding-bottom: 6px;
+	padding-top: 8px;
+	vertical-align: middle;
+	font-style: italic;
+}
+
+#Nav_Bar a:hover {
+	color: #DDA0DD;
+}
+
+#Nav_Bar li:hover {
+	padding-bottom: 8px;
+}
+
+#Nav_Bar li.Selected {
+	padding-bottom: 8px;
+}
+
+#Nav_Bar li.Selected a {
+	color: #DDA0DD;
+}

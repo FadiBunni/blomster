@@ -1,0 +1,98 @@
+#Kontakt_Wrapper2 {
+	position: relative;
+	width: 1160px;
+	height: auto;
+	background-color: white;
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	margin-top: 50px;
+}
+
+.Kontakt_Contents {
+	width: 100%;
+	max-width: 500px;
+	padding: 30px 20px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.Kontakt_Title {
+	color: #f90;
+	font-size: 45px !important;
+	margin-bottom: 20px;
+}
+
+.Kontakt_Contents p {
+	font-size: 40px;
+}
+
+.Kontakt_Contents label, input, textarea {
+	display: block;
+}
+
+.Kontakt_Contents input, textarea {
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.Kontakt_Contents label input, label textarea {
+	margin-top: 10px;
+}
+
+.Kontakt_Contents label {
+	margin-bottom: 20px;
+}
+
+.Kontakt_Contents textarea {
+	height: 200px;
+	resize: none;
+}
+
+.Kontakt_Contents input[type="submit"], button {
+	width: auto; 
+}
+
+.Muted {
+	margin-top: 20px;
+	color: #aaa;
+	font-size: 25px !important;
+}
+
+/* Components */
+
+.Panel1, .Panel2 {
+	border: 1px solid #ddd;
+	background: #f0f0f0;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.Panel1 li {
+	font-size: 15px;
+	font-style: italic;
+	color: red;
+	text-align: center;
+}
+
+.Panel2 li {
+	font-size: 15px;
+	font-style: italic;
+	color: green;
+	text-align: center;
+}
+
+.Kontakt_Contents h1 {
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+#Find_Os_Kort {
+	margin-left: -350px;
+	margin-top: 20px;
+	position: relative;
+	width: 1160px;
+	height: 400px;
+}
+

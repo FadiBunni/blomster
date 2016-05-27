@@ -1,0 +1,158 @@
+.Sortiment_Contents {
+	height: auto;
+	width: 1160px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.Sortiment_Contents div {
+	display: inline-table;
+}
+
+.Left_Nav {
+	width: 275px;
+	margin-top: 31px;
+	vertical-align: top;
+}
+
+.Mid_Content {
+	width: 865px;
+	height: auto;
+	margin-left: 15px;
+}
+
+/*****/
+
+/*****NOSCRIPT*****/
+
+.Left_Nav h1 {
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+
+.Productfilter_Category {
+	width: 275px;
+}
+
+.Productfilter_Category form {
+	text-align: center;
+}
+
+.Productfilter_Category select {
+	width: 230px;
+}
+
+/*****NOSCRIPT*****/
+
+.Left_Nav li{
+	margin-bottom: 10px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid black;
+}
+
+.Left_Nav li > ul {
+    border-top: 1px solid black;
+    margin-top: 2px;
+}
+
+.Left_Nav li > ul > li:first-child {
+    margin-top: 10px;
+}
+
+.Left_Nav li > ul > li:last-child {
+    border: none;
+    margin-bottom: 0px;
+}
+
+.Left_Nav a {
+	color: black;
+}
+
+.Left_Nav a:hover {
+	color:#DDA0DD;
+}
+
+a.Selected {
+	color:#DDA0DD;
+}
+
+.Left_Sub_Nav  {
+	padding-left: 20px;
+}
+
+.Left_Sub_Nav a {
+	font-style: italic;
+}
+
+/***/
+
+.Mid_Content h1 {
+	font-size: 18px;
+}
+
+.Sub_Content {
+	margin-top: 13px;
+	height: 100px;
+	width: 865px;
+}
+
+.Text_Bar {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+
+.Products ul li {
+	display: inline-table;
+	width: 275px;
+	height: 395px;
+	background-color: #f7e9f4;
+	margin-right: 14px;
+	margin-top: 10px;
+	position: relative;
+	border-radius: 5px;
+}
+
+.Products ul li:nth-child(3n+3) {
+	margin-right: 0px;
+}
+
+.Product_Info {
+	width: 273px;
+	margin-top: 280px;
+	text-align: center;
+	font-size: 14px;
+	margin-left: 3px;
+}
+
+.Product_Info span {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+#Product_Name {
+	margin-bottom: 15px;
+}
+
+#Product_Description {
+	height: 50px;
+	font-size: 13px;
+}
+
+#Product_Price {
+ 	margin-top: 5px;
+}
+
+#Product_Img {
+  	top: 2%;
+    left: 2%;
+    bottom: 50%;
+    right: 50%;
+	width: 265px;
+	height: 265px;
+	position: absolute;
+	border-radius: 5px;
+}
+
+
