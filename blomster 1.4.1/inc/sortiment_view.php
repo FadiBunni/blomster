@@ -118,17 +118,21 @@
 								foreach ($icategory as $info_text) {
 									echo <<<EOT
 										<p class="Info_Text">{$info_text->Text_field}</p>
+
 EOT;
-									if($i == 0) break;
+									if($i == 0)break;
 									$i++;
 								}
+								echo "<p class='Info_Text'>Ingen produkter på nuværende tidspunkt, søg igen i sortiment for andet inspiration.</p>";
 							}
 						?>
 						<script id="Info_Text" type="text/x-handlebars-template">
 							{{#each this}}
 								{{#if @first}}
-									<p id="Product_Name">{{Text_field}}</p>
+									<p class="Info_Text">{{Text_field}}</p>
 								{{/if}}
+							{{else}}
+									<p class='Info_Text'>Ingen produkter på nuværende tidspunkt, søg igen i sortiment for andet inspiration.</p>
 							{{/each}}
 						</script>
 					</div>
@@ -137,17 +141,17 @@ EOT;
 								<?php
 									if(isset($icategory)){
 										foreach ($icategory as $info) {
-										echo <<<EOT
-										<li>
-											<div class="Product_Info">
-												<p id="Product_Name">{$info->Name} </p>
-												<p id="Product_Description"><span>Beskrivelse:</span> {$info->Description}</p>
-												<p id="Product_Price"><span>Pris:</span> {$info->Price} DKK</p>
-											</div>
-											<a href="{$info->Img_path_full}{$info->Img_name}{$info->Img_type}" target="blank">
-												<img id="Product_Img" src="{$info->Img_path_thumbnail}{$info->Img_name}{$info->Img_type}" alt="{$info->Img_name}">
-											</a>
-										</li>
+											echo <<<EOT
+											<li>
+												<div class="Product_Info">
+													<p id="Product_Name">{$info->Name} </p>
+													<p id="Product_Description"><span>Beskrivelse:</span> {$info->Description}</p>
+													<p id="Product_Price"><span>Pris:</span> {$info->Price} DKK</p>
+												</div>
+												<a href="{$info->Img_path_full}{$info->Img_name}{$info->Img_type}" target="blank">
+													<img id="Product_Img" src="{$info->Img_path_thumbnail}{$info->Img_name}{$info->Img_type}" alt="{$info->Img_name}">
+												</a>
+											</li>
 EOT;
 									    }
 									}

@@ -15,11 +15,10 @@ class Products {
 		try {
 			$stmt = $this->dbh->getConnection()->prepare(
 				"SELECT * FROM product
-				 INNER JOIN product_text
-				 on product.category = product_text.category
-				 where product.category = :category
-				");
-
+				LEFT JOIN product_text
+				ON Product.category = product_text.category
+				WHERE product.category = :category
+				 ");
 			$stmt->execute(array(':category'=> $category));
 			return $stmt->fetchAll(PDO::FETCH_OBJ);
 
