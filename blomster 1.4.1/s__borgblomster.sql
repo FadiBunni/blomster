@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.10.7
+-- version 4.5.1
 -- http://www.phpmyadmin.net
 --
--- Vært: localhost:3306
--- Genereringstid: 25. 04 2016 kl. 22:10:05
--- Serverversion: 10.0.24-MariaDB
--- PHP-version: 5.4.31
+-- Vært: 127.0.0.1
+-- Genereringstid: 26. 05 2016 kl. 22:31:33
+-- Serverversion: 10.1.10-MariaDB
+-- PHP-version: 7.0.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,10 +14,10 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `soeborgb_blomster`
+-- Database: `søborgblomster`
 --
 
 -- --------------------------------------------------------
@@ -26,8 +26,8 @@ SET time_zone = "+00:00";
 -- Struktur-dump for tabellen `product`
 --
 
-CREATE TABLE IF NOT EXISTS `product` (
-  `Product_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `product` (
+  `Product_id` int(11) NOT NULL,
   `Name` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Description` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Price` int(11) NOT NULL,
@@ -36,9 +36,8 @@ CREATE TABLE IF NOT EXISTS `product` (
   `Img_name` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Img_path_thumbnail` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `Img_type` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `Img_path_full` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`Product_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=48 ;
+  `Img_path_full` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Data dump for tabellen `product`
@@ -79,6 +78,59 @@ INSERT INTO `product` (`Product_id`, `Name`, `Description`, `Price`, `Category`,
 (46, 'grave lys', '', 38, 'Diverse', 'Grave lys', '27', '../img/product/thumbnail/diverse/', '.png', '../img/product/full/diverse/'),
 (47, 'grave lys', '', 38, 'Diverse', 'Grave lys', '25', '../img/product/thumbnail/diverse/', '.png', '../img/product/full/diverse/');
 
+-- --------------------------------------------------------
+
+--
+-- Struktur-dump for tabellen `product_text`
+--
+
+CREATE TABLE `product_text` (
+  `Product_text_id` int(11) NOT NULL,
+  `Category` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `Sub_category` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `Text_field` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Data dump for tabellen `product_text`
+--
+
+INSERT INTO `product_text` (`Product_text_id`, `Category`, `Sub_category`, `Text_field`) VALUES
+(4, 'begravelse', '', 'Priserne er vejledende, såvel som produktet. eksempelvis kan vi sagtens få lavet kistepynt, mindre for en mindre pris, der er i overensstemmelse med dine ønsker.'),
+(5, 'brullup', '', 'Ingen produkter på nuværende tidspunkt, se sortiment for inspiration.'),
+(6, 'udendørs planter', '', 'Ingen produkter på nuværende tidspunkt, se sortiment for inspiration.'),
+(7, 'buketter', '', 'Priserne for buketterne er selvfølgelig vejledende, selve buketten er også. Hvis produktet ikke er tilstede i butikken på dagen, kan du bede os om at lave en magen til, helst i god tid. Det kan du gøre ved at sende en besked i kontaktformularen. ');
+
+--
+-- Begrænsninger for dumpede tabeller
+--
+
+--
+-- Indeks for tabel `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`Product_id`);
+
+--
+-- Indeks for tabel `product_text`
+--
+ALTER TABLE `product_text`
+  ADD PRIMARY KEY (`Product_text_id`);
+
+--
+-- Brug ikke AUTO_INCREMENT for slettede tabeller
+--
+
+--
+-- Tilføj AUTO_INCREMENT i tabel `product`
+--
+ALTER TABLE `product`
+  MODIFY `Product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+--
+-- Tilføj AUTO_INCREMENT i tabel `product_text`
+--
+ALTER TABLE `product_text`
+  MODIFY `Product_text_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
