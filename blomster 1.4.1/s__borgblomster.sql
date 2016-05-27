@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 26. 05 2016 kl. 22:31:33
--- Serverversion: 10.1.10-MariaDB
--- PHP-version: 7.0.4
+-- Genereringstid: 28. 05 2016 kl. 00:34:09
+-- Serverversion: 10.1.13-MariaDB
+-- PHP-version: 5.6.20
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -28,15 +28,15 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `product` (
   `Product_id` int(11) NOT NULL,
-  `Name` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `Description` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `Price` int(11) NOT NULL,
-  `Category` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `Sub_category` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `Img_name` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `Img_path_thumbnail` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `Img_type` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `Img_path_full` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+  `Name` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Description` text CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+  `Price` int(11) DEFAULT NULL,
+  `Category` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Sub_category` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Img_name` varchar(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Img_path_thumbnail` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Img_type` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Img_path_full` varchar(256) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -44,7 +44,6 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`Product_id`, `Name`, `Description`, `Price`, `Category`, `Sub_category`, `Img_name`, `Img_path_thumbnail`, `Img_type`, `Img_path_full`) VALUES
-(1, '', '', 150, 'buketter', 'Buketter fra 100-149kr.-', '1', '../img/product/thumbnail/buketter/', '.png', '../img/product/full/buketter/'),
 (3, '', '', 150, 'buketter', 'Buketter fra 150-199kr.-', '3', '../img/product/thumbnail/buketter/', '.png', '../img/product/full/buketter/'),
 (4, '', '', 150, 'buketter', 'Buketter fra 150-199kr.-', '4', '../img/product/thumbnail/buketter/', '.png', '../img/product/full/buketter/'),
 (7, '', '', 175, 'buketter', 'Buketter fra 150-199kr.-', '7', '../img/product/thumbnail/buketter/', '.png', '../img/product/full/buketter/'),
@@ -86,8 +85,8 @@ INSERT INTO `product` (`Product_id`, `Name`, `Description`, `Price`, `Category`,
 
 CREATE TABLE `product_text` (
   `Product_text_id` int(11) NOT NULL,
-  `Category` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `Sub_category` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `Category` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Sub_category` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `Text_field` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -97,9 +96,7 @@ CREATE TABLE `product_text` (
 
 INSERT INTO `product_text` (`Product_text_id`, `Category`, `Sub_category`, `Text_field`) VALUES
 (4, 'begravelse', '', 'Priserne er vejledende, såvel som produktet. eksempelvis kan vi sagtens få lavet kistepynt, mindre for en mindre pris, der er i overensstemmelse med dine ønsker.'),
-(5, 'brullup', '', 'Ingen produkter på nuværende tidspunkt, se sortiment for inspiration.'),
-(6, 'udendørs planter', '', 'Ingen produkter på nuværende tidspunkt, se sortiment for inspiration.'),
-(7, 'buketter', '', 'Priserne for buketterne er selvfølgelig vejledende, selve buketten er også. Hvis produktet ikke er tilstede i butikken på dagen, kan du bede os om at lave en magen til, helst i god tid. Det kan du gøre ved at sende en besked i kontaktformularen. ');
+(7, 'buketter', '', 'Priserne for buketterne er selvfølgelig vejledende, selve buketten er også. Hvis produktet ikke er tilstede i butikken på dagen, kan du bede os om at lave en magen til, helst i god tid. Det kan du gøre ved enten at sende en besked til os i kontaktformularen eller at ringe. ');
 
 --
 -- Begrænsninger for dumpede tabeller
@@ -125,12 +122,12 @@ ALTER TABLE `product_text`
 -- Tilføj AUTO_INCREMENT i tabel `product`
 --
 ALTER TABLE `product`
-  MODIFY `Product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `Product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 --
 -- Tilføj AUTO_INCREMENT i tabel `product_text`
 --
 ALTER TABLE `product_text`
-  MODIFY `Product_text_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `Product_text_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

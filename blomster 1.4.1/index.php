@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset_main.css"/>
 	<link rel="stylesheet" type="text/css" href="css/header.css"/>
 	<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	<!-- <link rel="shortcut icon" href="img/søborg_blomster_favicon.ico"> -->
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script src="js/libs/jquery-1.12.0.js"></script>
