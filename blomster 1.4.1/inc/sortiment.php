@@ -18,7 +18,7 @@
 		echo json_encode($icategory);
 		return;
 	}else{
-		$icategory = $products->get_product_info_by_category('udendørs planter'); //THIS IS NOT ASYNCHRONOUS UPDATE!!!!
+		$icategory = $products->get_product_info_by_category('buketter'); //THIS IS NOT ASYNCHRONOUS UPDATE!!!!
 	}
 
 	include 'sortiment_view.php';

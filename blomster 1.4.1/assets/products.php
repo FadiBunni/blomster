@@ -16,7 +16,7 @@ class Products {
 			$stmt = $this->dbh->getConnection()->prepare(
 				"SELECT * FROM product
 				LEFT JOIN product_text
-				ON Product.category = product_text.category
+				ON product.category = product_text.category
 				WHERE product.category = :category
 				 ");
 			$stmt->execute(array(':category'=> $category));
@@ -31,10 +31,10 @@ class Products {
 		try {
 			$stmt = $this->dbh->getConnection()->prepare(
 				"SELECT * FROM product
-				 WHERE Sub_category
-				 LIKE :subcategory
+				LEFT JOIN product_text
+				ON product.sub_category = product_text.sub_category
+				WHERE product.Sub_category = :subcategory
 				");
-
 			$stmt->execute(array(':subcategory'=> $subcategory));
 			return $stmt->fetchAll(PDO::FETCH_OBJ);
 

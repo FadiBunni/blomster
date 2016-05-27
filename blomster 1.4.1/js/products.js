@@ -41,6 +41,7 @@
 				dataType: 'json',
 				success: function(results) {
 						self.config.productsList.empty().append(self.config.productsListTemplate(results));
+						self.config.textBar.empty().append(self.config.infoText(results));
 				}
 			});
 		}
