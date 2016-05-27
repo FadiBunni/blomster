@@ -25,8 +25,8 @@
 				data: {Search_Category:textByCategory},
 				dataType: 'json',
 				success: function(results) {
-						self.config.productsList.empty().append(self.config.productsListTemplate(results));
-						self.config.textBar.empty().append(self.config.infoText(results));
+					self.config.productsList.empty().append(self.config.productsListTemplate(results));
+					self.config.textBar.empty().append(self.config.infoText(results));
 				}
 			});
 		},
@@ -40,8 +40,10 @@
 				data: {Search_SubCategory:textBySubCategory},
 				dataType: 'json',
 				success: function(results) {
-						self.config.productsList.empty().append(self.config.productsListTemplate(results));
+					self.config.productsList.empty().append(self.config.productsListTemplate(results));
+					if(results){
 						self.config.textBar.empty().append(self.config.infoText(results));
+					}
 				}
 			});
 		}

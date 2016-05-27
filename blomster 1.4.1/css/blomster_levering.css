@@ -1,0 +1,18 @@
+.Blomster_Levering_Contents {
+	height: auto;
+	max-width: 1160px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	overflow-x: visible;
+}
+
+.Title {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.Text_Bar {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}

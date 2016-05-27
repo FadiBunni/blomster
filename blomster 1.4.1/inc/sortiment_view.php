@@ -120,10 +120,12 @@
 										<p class="Info_Text">{$info_text->Text_field}</p>
 
 EOT;
-									if($i == 0)break;
+									if($i == 0) break;
 									$i++;
 								}
-								echo "<p class='Info_Text'>Ingen produkter på nuværende tidspunkt, søg igen i sortiment for andet inspiration.</p>";
+								if(empty($icategory)){
+									echo "<p class='Info_Text'>Ingen produkter på nuværende tidspunkt, søg igen i sortiment for andet inspiration.</p>";
+								}
 							}
 						?>
 						<script id="Info_Text" type="text/x-handlebars-template">

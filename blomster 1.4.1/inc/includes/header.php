@@ -40,7 +40,7 @@
                   </li>
 
                   <li>
-                    <a href="">BLOMSTER LEVERING</a>
+                    <a href="../inc/blomster_levering.php">BLOMSTER LEVERING</a>
                   </li>
 
                   <li>
