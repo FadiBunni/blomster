@@ -6,25 +6,25 @@
 	margin: 0 auto;
 	right: 0;
 	left: 0;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
-.Kontakt_Contents {
-	width: 100%;
-	max-width: 500px;
-	padding: 30px 20px;
-	margin: 0 auto;
-	box-sizing: border-box;
+.Text_Box{
+	margin-top: 25px;
+	max-width: 575px;
+	float: left;
+	line-height: 125%;
 }
 
-.Kontakt_Title {
-	color: #f90;
-	font-size: 45px !important;
+.Title {
+	font-size: 25px;
 	margin-bottom: 20px;
 }
 
-.Kontakt_Contents p {
-	font-size: 40px;
+.Kontakt_Form {
+	max-width: 1000px;
+	padding: 30px 0px;
+	margin-left: 600px;
 }
 
 .Kontakt_Contents label, input, textarea {
@@ -38,7 +38,7 @@
 }
 
 .Kontakt_Contents label input, label textarea {
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 .Kontakt_Contents label {
@@ -65,8 +65,7 @@
 .Panel1, .Panel2 {
 	border: 1px solid #ddd;
 	background: #f0f0f0;
-	margin-bottom: 20px;
-	padding: 20px;
+	margin-bottom: 10px;
 }
 
 .Panel1 li {
@@ -74,6 +73,8 @@
 	font-style: italic;
 	color: red;
 	text-align: center;
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 
 .Panel2 li {
@@ -83,16 +84,10 @@
 	text-align: center;
 }
 
-.Kontakt_Contents h1 {
-	font-size: 14px;
-	font-weight: lighter;
-}
-
 #Find_Os_Kort {
-	margin-left: -350px;
-	margin-top: 20px;
 	position: relative;
 	width: 1160px;
 	height: 400px;
+	margin-bottom: 20px;
 }
 

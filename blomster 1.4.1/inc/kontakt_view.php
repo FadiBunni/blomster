@@ -19,6 +19,11 @@
 </head>
 	<div id="Kontakt_Wrapper2">
       	<div class="Kontakt_Contents">
+      		<div class="Text_Box">
+      			<h1 class="Title">Find os &amp; kontakt os</h1>
+      			<p>For neden kan du se, hvor vi befinder os. <br> Til højre kan du bestille, eller skrive til os hvis du har spørgsmål. Hvis du vil bestille, vil vi gerne bede om dine oplysninger; fornavn, efternavn, telefonnummer. Ydermere skal vi også vide, hvilken betalingsmetode du vil benytte, en beskrivelse og en cirka pris på din bestilling, samt fornavn, efternavn, og adressen på modtageren.
+      			</p>
+      		</div>
       		<div class="Kontakt_Form">
 				<?php if(!empty($errors)): ?>
 			      	<div class="Panel1">
@@ -61,7 +66,7 @@
 					<p class="Muted">"*" Betyder: fæltet er krævet</p>
 				</form>
 			</div>
-			<div id="Find_Os_Kort"></div>
+			<div id="Find_Os_Kort"></div><!--Used for showing the google map-->
       	</div>
     </div>
 <?php

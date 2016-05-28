@@ -120,7 +120,7 @@
                 </li>
               </ul>
             </div>
-              <p>VERSION 1.3 &nbsp COPYRIGHT &copy<span>FADI BUNNI</span></p>
+              <p>VERSION 1.4.1 &nbsp COPYRIGHT &copy<span>FADI BUNNI</span></p>
           </div>
         <div><!-- End of Wrapper3 -->
       </footer>
